@@ -80,7 +80,8 @@ function iot_init($atts) {
         'size' => '',
         'color' => ''
     ), $atts));
-     if ($size || $color) {
+    $styles = '';
+    if ($size || $color) {
         $styles = "style=\"font-size: $size; color: $color;\"";
     }
     $output = "<span id=\"iota_price\" $styles></span>";
